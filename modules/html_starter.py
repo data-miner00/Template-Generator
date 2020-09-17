@@ -117,14 +117,13 @@ internal_css = r"""@import url('https://fonts.googleapis.com/css2?family=Libre+B
 		}"""
 
 # Info #8: jQuery?
-jquery_res = r'<script src=""></script>'
+jquery_res = r''
 
 	
 # HTML parser function
 def html_parser(username: str, page_title: str, want_jquery: bool):
-    username = username
-    page_title = page_title
-
+    global jquery_res
+    
     if want_jquery:
         jquery_res = jquery_src
 
