@@ -1,13 +1,14 @@
 #
-#  HTML module
+#  This is a module that responsible for generating the template codes
+#  for a basic HTML template.
 #
 
 html = r"""
 <!DOCTYPE html>
 <!--
 	HTML template generated from Python {}.
-    Created by {} On {} at {}.
-    Copyright © {}
+    Created by {} on {} at {}.
+    Copyright © {}.
 -->
 <html lang="en">
 <head>

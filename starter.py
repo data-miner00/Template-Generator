@@ -1,4 +1,5 @@
 import modules.html_starter as hs
+from modules.css_starter import css_parser
 
 def menu():
 	print("\n - - - - - Programming Starter Kit - - - - - \n")
@@ -24,6 +25,15 @@ def menu():
 			f.write(html)
 
 		print("HTML file generated!")
+
+	elif selection == 2:
+		username = input("Name/Username: ")
+		css = css_parser(username)
+
+		with open("./outputs/main.css", "w") as f:
+			f.write(css)
+
+		print("CSS file generated!")
 	
 if __name__ == "__main__":
 	menu()
