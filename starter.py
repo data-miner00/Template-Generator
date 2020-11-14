@@ -1,5 +1,6 @@
 import modules.html_starter as hs
 from modules.css_starter import css_parser
+from modules.cpp_starter import cpp_parser, extensions
 
 def menu():
 	print("\n - - - - - Programming Starter Kit - - - - - \n")
@@ -34,6 +35,17 @@ def menu():
 			f.write(css)
 
 		print("CSS file generated!")
+
+	elif selection == 3:
+		username = input("Name/Username: ")
+		cpp = cpp_parser(username)
+		selected = input(extensions)
+
+		with open("./outputs/source." + selected, "w") as f:
+			f.write(cpp)
+
+		print("C++ file generated!")
+
 	
 if __name__ == "__main__":
 	menu()

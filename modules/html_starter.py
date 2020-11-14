@@ -7,8 +7,8 @@ html = r"""
 <!DOCTYPE html>
 <!--
 	HTML template generated from Python {}.
-    Created by {} on {} at {}.
-    Copyright © {}.
+  Created by {} on {} at {}.
+  Copyright © {}.
 -->
 <html lang="en">
 <head>
